@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh 'echo data.txt'
+        sh 'mvn -Dmaven.test.failure.ignore clean package'
       }
     }
 
