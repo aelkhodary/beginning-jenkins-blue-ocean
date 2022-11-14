@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh 'mvn clean package'
+        sh 'echo \'This is a test\' > data.txt'
         stash(name: 'build-test-artifacts', includes: '**/ target/surefire-reports/TEST-*.xml,target/*.jar')
       }
     }
