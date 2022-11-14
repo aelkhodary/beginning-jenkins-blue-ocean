@@ -23,7 +23,7 @@ pipeline {
       }
       steps {
         unstash 'Build-test-artifacts'
-        junit '*/Ch03/example-maven-project/target/surefire-reportss/TEST-*.xml'
+        junit '**/Ch03/example-maven-project/target/surefire-reportss/TEST-*.xml'
         archiveArtifacts(artifacts: '*/Ch03/example-maven-project/target/*.jar', onlyIfSuccessful: true)
       }
     }
