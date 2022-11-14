@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh 'echo \'This is a test\' > data.txt'
+        sh 'echo data.txt'
       }
     }
 
